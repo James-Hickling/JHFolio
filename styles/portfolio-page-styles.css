@@ -1,0 +1,374 @@
+/* Font insertions */
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+
+
+/* Page Background */
+
+body {
+    background-color: rgb(211, 203, 190);
+
+    margin: 0%;
+
+    cursor: default;
+}
+
+
+
+/* Removes abbr decoration */
+
+abbr {
+    text-decoration: none;
+}
+
+
+
+/* Main Page containers */
+
+.folio-page-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    margin: 21.3333px;
+}
+
+.folio-content-columns {
+    width: 100%;
+
+    display: inline-flex;
+    flex-flow: column;
+
+    margin: 0px;
+
+    padding: 0px;
+}
+
+
+
+/* Website code download */
+
+.folio-heading-element {
+    display: inline-flex;
+
+    grid-column: 1 / span 2;
+
+    border: solid 1px rgb(149, 129, 116);
+
+    width: 100%;
+}
+
+.folio-heading-container {
+    background-color: rgb(12, 12, 12);
+
+    width: 100%;
+
+    display: inline-flex;
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+
+    
+}
+
+.folio-heading {
+    width: 93.369%;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 5px 0px 0px 5px;
+
+    display: inline-flex;
+
+    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
+}
+
+.folio-heading h2 {
+    align-self: center;
+    
+    margin: 0px 0px 0px calc((4/3) * 20px);
+
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+}
+
+.folio-heading-download {
+    height: auto;
+    width: 6.631%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 0px 5px 5px 0px;
+
+    margin: calc((4/3) * 10px);
+
+    display: inline-flex;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.folio-heading-download img {
+    margin: calc((4/3) * 10px);
+
+    width: 100%;
+    height: auto;
+}
+
+.folio-heading-download:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+
+
+/* Folio Heading text variations */
+
+#photo-text {
+    color: rgb(223, 62, 35);
+}
+
+#artwork-text {
+    color: rgb(250, 106, 10);
+}
+
+#design-text {
+    color: rgb(255, 252, 64);
+}
+
+#coding-text {
+    color: rgb(89, 193, 53);
+}
+
+#academic-text {
+    color: rgb(82, 129, 224);
+}
+
+#personal-text {
+    color: rgb(117, 77, 154);
+}
+
+
+
+/* Folio content heading */
+
+.folio-content-element {
+    display: inline-flex;
+    flex-flow: wrap;
+
+    border: solid 1px rgb(149, 129, 116);
+    
+
+    width: 100%;
+    height: fit-content;
+}
+
+.folio-content-container {
+    background-color: rgb(12, 12, 12);
+
+    width: 100%;
+
+    display: inline-flex;
+    flex-flow: wrap;
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+
+    
+}
+
+.folio-content-heading {
+    flex-basis: 100%;
+
+    width: 100%;
+
+    display: inline-flex;
+}
+
+.heading {
+    width: 93.369%;
+    height: auto;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 5px 0px 0px 5px;
+
+    display: inline-flex;
+
+    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
+}
+
+.heading h2 {
+    align-self: center;
+    
+    margin: 0px 0px 0px calc((4/3) * 20px);
+
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+}
+
+.dropdown-button {
+    height: auto;
+    width: 12%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 0px 5px 5px 0px;
+
+    margin: calc((4/3) * 10px);
+
+    display: inline-flex;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.dropdown-button img {
+    margin: calc((4/3) * 10px);
+
+    width: 100%;
+    height: auto;
+}
+
+.dropdown-button:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+
+
+/* Folio content */
+
+.folio-content {
+    display: inline-flex;
+
+    width: 100%;
+}
+
+.content {
+    width: 93.369%;
+
+    margin: 0px 0px 0px calc((4/3) * 10px);
+
+    display: inline-flex;
+    flex-flow: column;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: calc((4/3) * 10px);
+}
+
+.side-bar {
+    width: 12%;
+
+    display: inline flex;
+    flex-flow: column;
+
+    justify-content: space-between;
+
+    margin: 0px calc((4/3) * 10px) calc((4/3) * 10px) calc((4/3) * 10px);
+}
+
+.grade {
+    background-color: rgb(53, 53, 53);
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.grade h3 {
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.download-content {
+    width: 100%;
+
+    background-color: rgb(53, 53, 53);
+
+    display: inline-flex;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.download-content img {
+    width: 100%;
+    height: auto;
+
+    margin: calc((4/3) * 10px);
+}
+
+.download-content:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.content-paragraph {
+    background-color: rgb(53, 53, 53);
+
+    width: 100%;
+    aspect-ratio: 7.7777 / 1;
+
+    display: inline-flex;
+
+    margin-bottom: calc((4/3) * 10px);
+}
+
+.content-paragraph p {
+    font: bold clamp(1pt, 2.5cqw, 24pt) "Inter";
+    color: rgb(211, 203, 190);
+
+    margin: 0px 0px 0px calc((4/3) * 20px);
+
+    align-self: center;
+}
+
+
+
+/* State classes */
+
+.side-bar-final {
+    border-bottom-right-radius: 5px;
+}
+
+.final-content {
+    border-bottom-left-radius: 5px;
+}
+
+.closed-dropdown {
+    display: none;
+}
+
+.opened-dropdown-button {
+    border-bottom-right-radius: 0px;
+    
+    background-color: rgb(102, 102, 102);
+}
+
+.opened-heading {
+    border-bottom-left-radius: 0px;
+}

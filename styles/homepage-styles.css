@@ -1,0 +1,639 @@
+/* Font insertions */
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+
+
+/* Page Background */
+
+body {
+    background-color: rgb(211, 203, 190);
+
+    margin: 0%;
+
+    cursor: default;
+
+    height: auto;
+}
+
+
+
+/* Main Page containers */
+
+.home-page-contents {
+    display: grid;
+
+    margin: 21.3333px;
+
+    grid-template-columns: 48% 52%;
+
+    border-top: solid 1px rgb(149, 129, 116);
+    border-right: solid 1px rgb(149, 129, 116);
+    border-left: solid 1px rgb(149, 129, 116);
+}
+
+.page-links {
+    border-right: solid 1px rgb(149, 129, 116);
+}
+
+.link-elements {
+    border-bottom: solid 1px rgb(149, 129, 116);
+}
+
+
+
+/* Photography portfolio */
+
+.photo-container {
+    background-color: rgb(12, 12, 12);
+
+    display:inline-flex;
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+}
+
+.photo-heading {
+    width: 85%;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 5px 0px 0px 5px;
+
+    display: inline-flex;
+
+    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.photo-heading:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.photo-heading h2 {
+    align-self: center;
+    
+    margin: 0px 0px 0px calc((4/3) * 20px);
+
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+}
+
+.photo-download {
+    height: 100%;
+    width: 15%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 0px 5px 5px 0px;
+
+    margin: calc((4/3) * 10px);
+
+    display: inline-flex;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.photo-download img {
+    margin: calc((4/3) * 10px);
+
+    width: 100%;
+    height: auto;
+}
+
+#photo-text {
+    color: rgb(223, 62, 35);
+}
+
+.photo-download:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+
+
+/* Artwork portfolio */
+
+.artwork-container {
+    background-color: rgb(12, 12, 12);
+
+    display:inline-flex;
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+}
+
+.artwork-heading {
+    width: 85%;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 5px 0px 0px 5px;
+
+    display: inline-flex;
+
+    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.artwork-heading:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.artwork-heading h2 {
+    align-self: center;
+    
+    margin: 0px 0px 0px calc((4/3) * 20px);
+
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+}
+
+.artwork-download {
+    height: 100%;
+    width: 15%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 0px 5px 5px 0px;
+
+    margin: calc((4/3) * 10px);
+
+    display: inline-flex;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.artwork-download img {
+    margin: calc((4/3) * 10px);
+
+    width: 100%;
+    height: auto;
+}
+
+#artwork-text {
+    color: rgb(250, 106, 10);
+}
+
+.artwork-download:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+
+
+/* Design portfolio */
+
+.design-container {
+    background-color: rgb(12, 12, 12);
+
+    display:inline-flex;
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+}
+
+.design-heading {
+    width: 85%;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 5px 0px 0px 5px;
+
+    display: inline-flex;
+
+    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.design-heading:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.design-heading h2 {
+    align-self: center;
+    
+    margin: 0px 0px 0px calc((4/3) * 20px);
+
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+}
+
+.design-download {
+    height: 100%;
+    width: 15%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 0px 5px 5px 0px;
+
+    margin: calc((4/3) * 10px);
+
+    display: inline-flex;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.design-download img {
+    margin: calc((4/3) * 10px);
+
+    width: 100%;
+    height: auto;
+}
+
+#design-text {
+    color: rgb(255, 252, 64);
+}
+
+.design-download:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+
+
+/*  portfolio */
+
+.code-container {
+    background-color: rgb(12, 12, 12);
+
+    display:inline-flex;
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+}
+
+.coding-heading {
+    width: 85%;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 5px 0px 0px 5px;
+
+    display: inline-flex;
+
+    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.coding-heading:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.coding-heading h2 {
+    align-self: center;
+    
+    margin: 0px 0px 0px calc((4/3) * 20px);
+
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+}
+
+.coding-download {
+    height: 100%;
+    width: 15%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 0px 5px 5px 0px;
+
+    margin: calc((4/3) * 10px);
+
+    display: inline-flex;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.coding-download img {
+    margin: calc((4/3) * 10px);
+
+    width: 100%;
+    height: auto;
+}
+
+#coding-text {
+    color: rgb(89, 193, 53);
+}
+
+.coding-download:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+
+
+/* Academic portfolio */
+
+.academic-container {
+    background-color: rgb(12, 12, 12);
+
+    display:inline-flex;
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+}
+
+.academic-heading {
+    width: 85%;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 5px 0px 0px 5px;
+
+    display: inline-flex;
+
+    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.academic-heading:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.academic-heading h2 {
+    align-self: center;
+    
+    margin: 0px 0px 0px calc((4/3) * 20px);
+
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+}
+
+.academic-download {
+    height: 100%;
+    width: 15%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 0px 5px 5px 0px;
+
+    margin: calc((4/3) * 10px);
+
+    display: inline-flex;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.academic-download img {
+    margin: calc((4/3) * 10px);
+
+    width: 100%;
+    height: auto;
+}
+
+#academic-text {
+    color: rgb(82, 129, 224);
+}
+
+.academic-download:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+
+
+/* About portfolio */
+
+.personal-container {
+    background-color: rgb(12, 12, 12);
+
+    display:inline-flex;
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+}
+
+.personal-heading {
+    width: 85%;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 5px 0px 0px 5px;
+
+    display: inline-flex;
+
+    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.personal-heading:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.personal-heading h2 {
+    align-self: center;
+    
+    margin: 0px 0px 0px calc((4/3) * 20px);
+
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+}
+
+.personal-download {
+    height: 100%;
+    width: 15%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 0px 5px 5px 0px;
+
+    margin: calc((4/3) * 10px);
+
+    display: inline-flex;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.personal-download img {
+    margin: calc((4/3) * 10px);
+
+    width: 100%;
+    height: auto;
+}
+
+#personal-text {
+    color: rgb(117, 77, 154);
+}
+
+.personal-download:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+
+
+/* Blurb element */
+
+.blurb {
+    border-bottom: solid 1px rgb(149, 129, 116);
+
+    height: fit-content;
+}
+
+.blurb div {
+    background-color: rgb(12, 12, 12);
+
+    border-radius: 10px;
+
+    display: inline-flex;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+}
+
+.blurb article {
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 5px;
+
+    height: auto;
+
+    margin: calc((4/3) * 10px);
+
+    padding: calc((4/3) * 20px) calc((4/3) * 50px) calc((4/3) * 20px) calc((4/3) * 20px);
+}
+
+.blurb h3 {
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+
+    margin-top: 0px;
+}
+
+.blurb p {
+    font: normal clamp(1pt, 2.5cqw, 24pt) "Inter";
+    color: rgb(211, 203, 190);
+}
+
+
+
+/* Website code download */
+
+.website-code-element {
+    display: inline-flex;
+
+    grid-column: 1 / span 2;
+
+
+    border-top: solid 1px rgb(149, 129, 116);
+    border-bottom: solid 1px rgb(149, 129, 116);
+    border-right: solid 1px rgb(149, 129, 116);
+
+    width: 100%;
+}
+
+.website-code-container {
+    background-color: rgb(12, 12, 12);
+
+    width: 100%;
+
+    display: inline-flex;
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+
+    
+}
+
+.website-code-heading {
+    width: 93.369%;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 5px 0px 0px 5px;
+
+    display: inline-flex;
+
+    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
+}
+
+.website-code-heading h2 {
+    align-self: center;
+    
+    margin: 0px 0px 0px calc((4/3) * 20px);
+
+    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
+    color: rgb(211, 203, 190);
+}
+
+.website-code-download {
+    height: auto;
+    width: 6.631%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(53, 53, 53);
+    
+    border-radius: 0px 5px 5px 0px;
+
+    margin: calc((4/3) * 10px);
+
+    display: inline-flex;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.website-code-download img {
+    margin: calc((4/3) * 10px);
+
+    width: 100%;
+    height: auto;
+}
+
+.website-code-download:hover {
+    background-color: rgb(102, 102, 102);
+}

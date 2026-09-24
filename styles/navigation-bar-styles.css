@@ -1,0 +1,468 @@
+/* Font insertions */
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+
+
+/* Page Background */
+
+body {
+    background-color: rgb(211, 203, 190);
+
+    margin: 0%;
+
+    cursor: default;
+}
+
+
+
+/* Main Page containers */
+
+.navigation-bar {
+    background-color: rgb(237, 230, 219);
+
+    display: inline-flex;
+
+    height: fit-content;
+}
+
+
+.navigation-container {
+    display: grid;
+    grid-template-columns: 10% 30% 10% 10% 10% 10% 10% 10%;
+
+    border-right: solid 1px rgb(211, 203, 190);
+    border-top: solid 1px rgb(211, 203, 190);
+    border-bottom: solid 1px rgb(211, 203, 190);
+
+    margin: 21.3333px;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Home Button */
+
+.home {
+    border-left: solid 1px rgb(211, 203, 190);
+
+    width: 100%;
+    height: 100%;
+}
+
+.home img {
+    height: auto;
+    width: 100%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(102, 102, 102);
+
+    border-radius: 5px;
+
+    margin: calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+}
+
+.home div {
+    display: inline-flex;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+    
+    width: fit-content;
+    height: auto;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.home div:hover img {
+    background-color: rgb(178, 178, 178);
+}
+
+.home div:hover {
+    background-color: rgb(124, 124, 124);
+}
+
+
+
+/* Logo */
+
+.logo {
+    border-left: solid 1px rgb(211, 203, 190);
+
+    width: 100%;
+    height: 100%;
+
+    align-content: center;
+}
+
+.logo div {
+    display: inline-flex;
+
+    margin: auto calc((4/3) * 20px) auto calc((4/3) * 20px);
+
+    justify-content: center;
+    align-content: center;
+
+    width: fit-content;
+    height: auto;
+
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* photo Button */
+
+.photo {
+    border-left: solid 1px rgb(211, 203, 190);
+
+    width: 100%;
+    height: 100%;
+}
+
+.photo img {
+    height: auto;
+    width: 100%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(102, 102, 102);
+
+    border-radius: 5px;
+
+    margin: calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+}
+
+.photo div {
+    display: inline-flex;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+    
+    width: fit-content;
+    height: auto;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.photo div:hover img {
+    background-color: rgb(178, 178, 178);
+}
+
+.photo div:hover {
+    background-color: rgb(124, 124, 124);
+}
+
+
+
+/* art Button */
+
+.artwork {
+    border-left: solid 1px rgb(211, 203, 190);
+
+    width: 100%;
+    height: 100%;
+}
+
+.artwork img {
+    height: auto;
+    width: 100%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(102, 102, 102);
+
+    border-radius: 5px;
+
+    margin: calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+}
+
+.artwork div {
+    display: inline-flex;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+    
+    width: fit-content;
+    height: auto;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.artwork div:hover img {
+    background-color: rgb(178, 178, 178);
+}
+
+.artwork div:hover {
+    background-color: rgb(124, 124, 124);
+}
+
+
+
+/* design Button */
+
+.design {
+    border-left: solid 1px rgb(211, 203, 190);
+
+    width: 100%;
+    height: 100%;
+}
+
+.design img {
+    height: auto;
+    width: 100%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(102, 102, 102);
+
+    border-radius: 5px;
+
+    margin: calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+}
+
+.design div {
+    display: inline-flex;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+
+    width: fit-content;
+    height: auto;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.design div:hover img {
+    background-color: rgb(178, 178, 178);
+}
+
+.design div:hover {
+    background-color: rgb(124, 124, 124);
+}
+
+
+
+/* coding Button */
+
+.coding {
+    border-left: solid 1px rgb(211, 203, 190);
+
+    width: 100%;
+    height: 100%;
+}
+
+.coding img {
+    height: auto;
+    width: 100%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(102, 102, 102);
+
+    border-radius: 5px;
+
+    margin: calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+}
+
+.coding div {
+    display: inline-flex;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+    
+    width: fit-content;
+    height: auto;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.coding div:hover img {
+    background-color: rgb(178, 178, 178);
+}
+
+.coding div:hover {
+    background-color: rgb(124, 124, 124);
+}
+
+
+
+/* academic Button */
+
+.academic {
+    border-left: solid 1px rgb(211, 203, 190);
+
+    width: 100%;
+    height: 100%;
+}
+
+.academic img {
+    height: auto;
+    width: 100%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(102, 102, 102);
+
+    border-radius: 5px;
+
+    margin: calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+}
+
+.academic div {
+    display: inline-flex;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+    
+    width: fit-content;
+    height: auto;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.academic div:hover img {
+    background-color: rgb(178, 178, 178);
+}
+
+.academic div:hover {
+    background-color: rgb(124, 124, 124);
+}
+
+
+
+/* Personal Button */
+
+.personal {
+    border-left: solid 1px rgb(211, 203, 190);
+
+    width: 100%;
+    height: 100%;
+}
+
+.personal img {
+    height: auto;
+    width: 100%;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: rgb(102, 102, 102);
+
+    border-radius: 5px;
+
+    margin: calc((4/3) * 10px);
+
+    transition: background-color 0.5s;
+}
+
+.personal div {
+    display: inline-flex;
+
+    background-color: rgb(53, 53, 53);
+
+    border-radius: 10px;
+
+    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
+
+    width: fit-content;
+    height: auto;
+
+    transition: background-color 0.5s;
+
+    cursor: pointer;
+}
+
+.personal div:hover img {
+    background-color: rgb(178, 178, 178);
+}
+
+.personal div:hover {
+    background-color: rgb(124, 124, 124);
+}
+
+
+
+/* Selected Icon changes */
+
+.selected-icon div {
+    background-color: rgb(124, 124, 124);
+    
+    cursor: default;
+}
+
+.selected-icon img {
+    background-color: rgb(178, 178, 178);
+}
+
+
+
+/* Iframe Styles/Page display */
+
+iframe {
+    border: none;
+    
+    width: 100%;
+
+    display: block;
+}

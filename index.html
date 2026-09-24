@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <!-- Linking style sheets and javascripts and flavicon -->
+
+        <link rel="stylesheet" href="./styles/navigation-bar-styles.css">
+        <link rel="icon" href="./images/global-icons/favicon.ico">
+
+        <script src="./scripts/navigation-bar-scripts.js" defer></script>
+        <script src="./scripts/homepage-scripts.js" defer></script>
+        
+    </head>
+
+    <body>
+
+        <!-- Navigation bar -->
+
+        <div class="navigation-bar">
+
+            <div class="navigation-container">
+
+                <!-- Home button -->
+
+                <div class="home selected-icon">
+                    <div onclick="changeIframe('./home.html'), selectIcon('.home')">
+                        <img id="home" src="./images/navbar-icons/home-icon.png">
+                    </div>
+                </div>
+
+                <!-- Website logo -->
+
+                <div class="logo">
+                    <div onclick="changeIframe('./home.html'), selectIcon('.home')">
+                        <img src="./images/navbar-icons/logo.png" alt="Logo">
+                    </div>
+                </div>
+
+                <!-- Photo portfolio button -->
+
+                <div class="photo">
+                    <div onclick="changeIframe('./photo.html'), selectIcon('.photo')">
+                        <img id="photo" src="./images/navbar-icons/photo-icon.png">
+                    </div>
+                </div>
+
+                <!-- Artwork portfolio button -->
+
+                <div class="artwork">
+                    <div onclick="changeIframe('./artwork.html'), selectIcon('.artwork')">
+                        <img id="artwork" src="./images/navbar-icons/art-icon.png">
+                    </div>
+                </div>
+
+                <!-- Design portfolio button -->
+
+                <div class="design">
+                    <div onclick="changeIframe('./design.html'), selectIcon('.design')">
+                        <img id="design" src="./images/navbar-icons/design-icon.png">
+                    </div>
+                </div>
+
+                <!-- Coding portfolio button -->
+
+                <div class="coding">
+                    <div onclick="changeIframe('./coding.html'), selectIcon('.coding')">
+                        <img id="coding" src="./images/navbar-icons/code-icon.png">
+                    </div>
+                </div>
+
+                <!-- Academic portfolio button -->
+
+                <div class="academic">
+                    <div onclick="changeIframe('./academic.html'), selectIcon('.academic')">
+                        <img id="academic" src="./images/navbar-icons/academic-icon.png">
+                    </div>
+                </div>
+
+                <!-- Personal portfolio button -->
+
+                <div class="personal">
+                    <div onclick="changeIframe('./personal.html'), selectIcon('.personal')">
+                        <img id="personal" src="./images/navbar-icons/about-icon.png">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Iframe displaying the pages content -->
+
+        <iframe src="./home.html" id="page" scrolling="no"></iframe>
+
+    </body>
+
+</html>
