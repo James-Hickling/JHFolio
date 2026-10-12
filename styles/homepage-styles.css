@@ -28,37 +28,39 @@ body {
 
     margin: 21.3333px;
 
-    grid-template-columns: 48% 52%;
+    grid-template-columns: 50% 50%;
 
-    border-top: solid 1px rgb(149, 129, 116);
-    border-right: solid 1px rgb(149, 129, 116);
-    border-left: solid 1px rgb(149, 129, 116);
+    border: solid 1px rgb(149, 129, 116);
 }
 
 .page-links {
-    border-right: solid 1px rgb(149, 129, 116);
+    border: solid 1px rgb(149, 129, 116);
 }
 
-.link-elements {
-    border-bottom: solid 1px rgb(149, 129, 116);
+.folio-heading-element {
+    display: inline-flex;
+
+    border: solid 1px rgb(149, 129, 116);
+
+    grid-column: 1 / span 2;
+
+    width: 100%;
 }
 
-
-
-/* Photography portfolio */
-
-.photo-container {
+.folio-heading-container {
     background-color: rgb(12, 12, 12);
 
-    display:inline-flex;
+    width: 100%;
+
+    display: inline-flex;
 
     border-radius: 10px;
 
     margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
 }
 
-.photo-heading {
-    width: 85%;
+.folio-heading {
+    width: 84%;
 
     background-color: rgb(53, 53, 53);
 
@@ -68,16 +70,10 @@ body {
 
     margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
 
-    transition: background-color 0.5s;
-
     cursor: pointer;
 }
 
-.photo-heading:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-.photo-heading h2 {
+.folio-heading h2 {
     align-self: center;
     
     margin: 0px 0px 0px calc((4/3) * 20px);
@@ -86,9 +82,10 @@ body {
     color: rgb(211, 203, 190);
 }
 
-.photo-download {
-    height: 100%;
-    width: 15%;
+.folio-heading-download {
+    height: auto;
+    width: 11%;
+    aspect-ratio: 1/1;
 
     justify-self: center;
     align-self: center;
@@ -106,417 +103,68 @@ body {
     cursor: pointer;
 }
 
-.photo-download img {
+.folio-heading-download img {
     margin: calc((4/3) * 10px);
 
     width: 100%;
     height: auto;
+    
 }
+
+.folio-heading-download:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+#website-download {
+    width: 5.45%;
+}
+
+#website-code {
+    width: 95%;
+}
+
+/* Folio Heading text variations */
 
 #photo-text {
     color: rgb(223, 62, 35);
-}
-
-.photo-download:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-
-
-/* Artwork portfolio */
-
-.artwork-container {
-    background-color: rgb(12, 12, 12);
-
-    display:inline-flex;
-
-    border-radius: 10px;
-
-    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
-}
-
-.artwork-heading {
-    width: 85%;
-
-    background-color: rgb(53, 53, 53);
-
-    border-radius: 5px 0px 0px 5px;
-
-    display: inline-flex;
-
-    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
-
-    transition: background-color 0.5s;
-
-    cursor: pointer;
-}
-
-.artwork-heading:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-.artwork-heading h2 {
-    align-self: center;
-    
-    margin: 0px 0px 0px calc((4/3) * 20px);
-
-    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
-    color: rgb(211, 203, 190);
-}
-
-.artwork-download {
-    height: 100%;
-    width: 15%;
-
-    justify-self: center;
-    align-self: center;
-
-    background-color: rgb(53, 53, 53);
-
-    border-radius: 0px 5px 5px 0px;
-
-    margin: calc((4/3) * 10px);
-
-    display: inline-flex;
-
-    transition: background-color 0.5s;
-
-    cursor: pointer;
-}
-
-.artwork-download img {
-    margin: calc((4/3) * 10px);
-
-    width: 100%;
-    height: auto;
 }
 
 #artwork-text {
     color: rgb(250, 106, 10);
 }
 
-.artwork-download:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-
-
-/* Design portfolio */
-
-.design-container {
-    background-color: rgb(12, 12, 12);
-
-    display:inline-flex;
-
-    border-radius: 10px;
-
-    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
-}
-
-.design-heading {
-    width: 85%;
-
-    background-color: rgb(53, 53, 53);
-
-    border-radius: 5px 0px 0px 5px;
-
-    display: inline-flex;
-
-    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
-
-    transition: background-color 0.5s;
-
-    cursor: pointer;
-}
-
-.design-heading:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-.design-heading h2 {
-    align-self: center;
-    
-    margin: 0px 0px 0px calc((4/3) * 20px);
-
-    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
-    color: rgb(211, 203, 190);
-}
-
-.design-download {
-    height: 100%;
-    width: 15%;
-
-    justify-self: center;
-    align-self: center;
-
-    background-color: rgb(53, 53, 53);
-
-    border-radius: 0px 5px 5px 0px;
-
-    margin: calc((4/3) * 10px);
-
-    display: inline-flex;
-
-    transition: background-color 0.5s;
-
-    cursor: pointer;
-}
-
-.design-download img {
-    margin: calc((4/3) * 10px);
-
-    width: 100%;
-    height: auto;
-}
-
 #design-text {
     color: rgb(255, 252, 64);
-}
-
-.design-download:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-
-
-/*  portfolio */
-
-.code-container {
-    background-color: rgb(12, 12, 12);
-
-    display:inline-flex;
-
-    border-radius: 10px;
-
-    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
-}
-
-.coding-heading {
-    width: 85%;
-
-    background-color: rgb(53, 53, 53);
-
-    border-radius: 5px 0px 0px 5px;
-
-    display: inline-flex;
-
-    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
-
-    transition: background-color 0.5s;
-
-    cursor: pointer;
-}
-
-.coding-heading:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-.coding-heading h2 {
-    align-self: center;
-    
-    margin: 0px 0px 0px calc((4/3) * 20px);
-
-    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
-    color: rgb(211, 203, 190);
-}
-
-.coding-download {
-    height: 100%;
-    width: 15%;
-
-    justify-self: center;
-    align-self: center;
-
-    background-color: rgb(53, 53, 53);
-
-    border-radius: 0px 5px 5px 0px;
-
-    margin: calc((4/3) * 10px);
-
-    display: inline-flex;
-
-    transition: background-color 0.5s;
-
-    cursor: pointer;
-}
-
-.coding-download img {
-    margin: calc((4/3) * 10px);
-
-    width: 100%;
-    height: auto;
 }
 
 #coding-text {
     color: rgb(89, 193, 53);
 }
 
-.coding-download:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-
-
-/* Academic portfolio */
-
-.academic-container {
-    background-color: rgb(12, 12, 12);
-
-    display:inline-flex;
-
-    border-radius: 10px;
-
-    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
-}
-
-.academic-heading {
-    width: 85%;
-
-    background-color: rgb(53, 53, 53);
-
-    border-radius: 5px 0px 0px 5px;
-
-    display: inline-flex;
-
-    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
-
-    transition: background-color 0.5s;
-
-    cursor: pointer;
-}
-
-.academic-heading:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-.academic-heading h2 {
-    align-self: center;
-    
-    margin: 0px 0px 0px calc((4/3) * 20px);
-
-    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
-    color: rgb(211, 203, 190);
-}
-
-.academic-download {
-    height: 100%;
-    width: 15%;
-
-    justify-self: center;
-    align-self: center;
-
-    background-color: rgb(53, 53, 53);
-
-    border-radius: 0px 5px 5px 0px;
-
-    margin: calc((4/3) * 10px);
-
-    display: inline-flex;
-
-    transition: background-color 0.5s;
-
-    cursor: pointer;
-}
-
-.academic-download img {
-    margin: calc((4/3) * 10px);
-
-    width: 100%;
-    height: auto;
-}
-
 #academic-text {
     color: rgb(82, 129, 224);
-}
-
-.academic-download:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-
-
-/* About portfolio */
-
-.personal-container {
-    background-color: rgb(12, 12, 12);
-
-    display:inline-flex;
-
-    border-radius: 10px;
-
-    margin: calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px) calc((4/3) * 20px);
-}
-
-.personal-heading {
-    width: 85%;
-
-    background-color: rgb(53, 53, 53);
-
-    border-radius: 5px 0px 0px 5px;
-
-    display: inline-flex;
-
-    margin: calc((4/3) * 10px) 0px calc((4/3) * 10px) calc((4/3) * 10px);
-
-    transition: background-color 0.5s;
-
-    cursor: pointer;
-}
-
-.personal-heading:hover {
-    background-color: rgb(102, 102, 102);
-}
-
-.personal-heading h2 {
-    align-self: center;
-    
-    margin: 0px 0px 0px calc((4/3) * 20px);
-
-    font: bold clamp(1pt, 2.5cqw, 32pt) "Inter";
-    color: rgb(211, 203, 190);
-}
-
-.personal-download {
-    height: 100%;
-    width: 15%;
-
-    justify-self: center;
-    align-self: center;
-
-    background-color: rgb(53, 53, 53);
-
-    border-radius: 0px 5px 5px 0px;
-
-    margin: calc((4/3) * 10px);
-
-    display: inline-flex;
-
-    transition: background-color 0.5s;
-
-    cursor: pointer;
-}
-
-.personal-download img {
-    margin: calc((4/3) * 10px);
-
-    width: 100%;
-    height: auto;
 }
 
 #personal-text {
     color: rgb(117, 77, 154);
 }
 
-.personal-download:hover {
+
+
+
+
+.folio-heading:hover {
     background-color: rgb(102, 102, 102);
 }
+
+
 
 
 
 /* Blurb element */
 
 .blurb {
-    border-bottom: solid 1px rgb(149, 129, 116);
+    border: solid 1px rgb(149, 129, 116);
 
     height: fit-content;
 }

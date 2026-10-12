@@ -98,7 +98,8 @@ abbr {
 
 .folio-heading-download {
     height: auto;
-    width: 6.631%;
+    width: 5.45%;
+    aspect-ratio: 1/1;
 
     justify-self: center;
     align-self: center;
@@ -121,6 +122,7 @@ abbr {
 
     width: 100%;
     height: auto;
+    
 }
 
 .folio-heading-download:hover {
@@ -218,6 +220,7 @@ abbr {
 .dropdown-button {
     height: auto;
     width: 12%;
+    aspect-ratio: 1/1;
 
     justify-self: center;
     align-self: center;
@@ -306,6 +309,8 @@ abbr {
 
 .download-content {
     width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
 
     background-color: rgb(53, 53, 53);
 
@@ -317,7 +322,7 @@ abbr {
 }
 
 .download-content img {
-    width: 100%;
+    width: calc(100% - (2 * ((4/3) * 10px)));
     height: auto;
 
     margin: calc((4/3) * 10px);
